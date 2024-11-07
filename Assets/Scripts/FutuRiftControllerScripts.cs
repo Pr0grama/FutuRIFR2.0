@@ -55,7 +55,6 @@ public class FutuRiftControllerScripts : MonoBehaviour
     private void Update()
     {
         var rot = transform.eulerAngles;
-
         if (rot.x > 100)
         {
             rot.x -= 360;

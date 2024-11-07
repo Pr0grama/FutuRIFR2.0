@@ -7,6 +7,7 @@ public class Trassa : MonoBehaviour
 {
     private CinemachineDollyCart p;
     [SerializeField] private GameObject cnvs;
+    [SerializeField] AudioSource audio2;
     private void Start()
     {
         p = GetComponent<CinemachineDollyCart>();
@@ -16,6 +17,7 @@ public class Trassa : MonoBehaviour
         if (p.m_Position >= 826.0)
         {
             cnvs.SetActive(true);
+            audio2.Stop();
 
         }
     }
